@@ -1,14 +1,22 @@
-<header  class="flex justify-between mx-auto py-4 w-[1120px]">
+---
+import BadgeImage from "./BadgeImage.astro";
+---
+
+<header  class="w-full mx-auto max-w-screen-xl p-4 items-center justify-between hidden lg:flex">
     <div class="w-1/2 flex justify-normal">
-        <img class="rounded-full w-10 h-10" src="https://avatars.githubusercontent.com/u/161369500?s=400&u=84117acefd973ed2094b8f7c91c92192c3b84e23&v=4" alt="Foto perfil Ruben Suarez">
-        <h5 class="px-4 py-2">Ruben Suarez</h5>
+        <BadgeImage>
+            <img class="w-10 h-10 rounded-full" src="https://avatars.githubusercontent.com/u/161369500?s=400&u=84117acefd973ed2094b8f7c91c92192c3b84e23&v=4" alt="Foto perfil Ruben Suarez">
+        </BadgeImage>
+        <div class="grid grid-cols-1">
+            <h8 class="px-2 text-sm">Ruben Suarez</h8>
+            <h8 class="px-2 text-sm">Software Engineer</h8>
+        </div>
     </div>
     <div class="w-1/2 grid justify-items-end">
-        <nav class="flex flex-row gap-x-8">
-            <a href="/home">Home</a>
-            <a href="/about">About me</a>
-            <a href="/proyects">Proyects</a>
-            <a href="/skill">Skills</a>
+        <nav class="flex flex-row gap-x-8 py-2">
+            <a href="#about">About me</a>
+            <a href="#project">Projects</a>
+            <a href="#skill">Skills</a>
         </nav>
     </div>
 </header>

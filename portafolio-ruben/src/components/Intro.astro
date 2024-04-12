@@ -1,0 +1,57 @@
+---
+import AngularIcon from "./icons/AngularIcon.astro";
+import ArrowRightIcon from "./icons/ArrowRightIcon.astro";
+import CssIcon from "./icons/CssIcon.astro";
+import DownloadDocIcon from "./icons/DownloadDocIcon.astro";
+import GitIcon from "./icons/GitIcon.astro";
+import HtmlIcon from "./icons/HtmlIcon.astro";
+import JavascriptIcon from "./icons/JavascriptIcon.astro";
+import LinkedinIcon from "./icons/LinkedinIcon.astro";
+import TypescriptIcon from "./icons/TypescriptIcon.astro";
+---
+
+<section id="intro" style="background-color: #1B1E1D;" class="w-full mx-auto px-6 lg:px-0 py-16">
+    <h1 class="text-4xl text-yellow-subtitle pb-4 flex justify-center flex-row">
+        Software Engineer
+    </h1>
+    <h1 class="text-5xl pb-4 flex justify-center flex-row">
+        Ruben Suarez
+    </h1>
+    <span style="color: #6E706F;" class="text-sm lg:text-lg flex justify-center flex-row">Front-End Angular / Back-end Python-Django</span>
+    <div class="lg:flex lg:flex-row grid grid-cols-0 justify-center">
+        <a href="https://www.linkedin.com/in/ruben-rolando-suarez-hidalgo-dev/" target="_blank">
+            <button class="w-[178px] m-4 h-12 px-6 bg-hoverInfoButton group relative inline-flex items-center justify-center overflow-hidden rounded-full font-medium duration-500">
+                <div class="relative inline-flex -translate-x-0 items-center transition group-hover:translate-x-6">
+                    <div class="absolute -translate-x-4 opacity-0 transition group-hover:-translate-x-6 group-hover:opacity-100">
+                        <LinkedinIcon class="w-6 h-6" />
+                    </div>
+                    <span class="px-2 pr-6">Linkedin</span>
+                    <div class="absolute right-0 translate-x-0 opacity-100 transition group-hover:translate-x-4 group-hover:opacity-0">
+                        <ArrowRightIcon />
+                    </div>
+                </div>
+            </button>
+        </a>
+        <a href="https://getonbrd-prod.s3.amazonaws.com/uploads/cv/a3d7d55501a7d06703c5bac740f94fe8/Ruben_Suarez_CV%282%29.pdf?X-Amz-Expires=86400&X-Amz-Date=20240331T180449Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJT5MYUSOEN4SITVA%2F20240331%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=d045b9891ea6e845b087a73225e39e474d51368e1cc4bb80743eebd348403b3f" target="_blank">
+            <button class="w-[178px] m-4 h-12 px-6 bg-hoverInfoButton group relative inline-flex items-center justify-center overflow-hidden rounded-full font-medium duration-500">
+                <div class="relative inline-flex -translate-x-0 items-center transition group-hover:translate-x-6">
+                    <div class="absolute -translate-x-4 opacity-0 transition group-hover:-translate-x-6 group-hover:opacity-100">
+                        <DownloadDocIcon />
+                    </div>
+                    <span class="px-2 pr-6">Download CV</span>
+                    <div class="absolute right-0 translate-x-0 opacity-100 transition group-hover:translate-x-4 group-hover:opacity-0">
+                        <ArrowRightIcon />
+                    </div>
+                </div>
+            </button>
+        </a>
+    </div>
+    <div class="flex justify-center">
+        <JavascriptIcon class="size-6 m-4" />
+        <TypescriptIcon class="size-6 m-4" />
+        <AngularIcon class="size-6 m-4" />
+        <HtmlIcon class="size-6 m-4" />
+        <CssIcon class="size-6 m-4" />
+        <GitIcon class="size-6 m-4" />
+    </div>
+</section>

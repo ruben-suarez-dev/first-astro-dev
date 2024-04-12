@@ -1,0 +1,16 @@
+---
+import Card from "./Card.astro"
+
+const SkillsList = ['Angular', 'Typescript', 'NodeJS', 
+'Python', 'Django', 'HTML', 'CSS', 'Tailwind', 'Astro']
+---
+<h1 class="pb-10 text-2xl tracking-tight sm:text-3sm dark:text-yellow-subtitle">
+    Skills
+</h1>
+<div id="skill" class="grid grid-cols-3 gap-3">
+    {
+        SkillsList.map((skill) => (
+          <Card title={ skill } />  
+        ))
+    }
+</div>
